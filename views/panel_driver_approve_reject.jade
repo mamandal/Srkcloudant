@@ -1,0 +1,69 @@
+#driverapproverejectPanel(hidden).panel
+	h1 Please check Driver Details and approve!
+	hr
+	
+	#innerWrap
+		
+		
+			form(action="/approverejectdriver" method="POST")#driverdetailsform
+			legend 
+				input(type="text" name="driverdetailsfirstname" placeholder="First Name" readonly="readonly")
+				span.hint &nbsp;&nbsp;First Name
+			
+			br
+			legend 
+				input(type="text" name="driverdetailslastname" placeholder="Last Name" readonly="readonly")
+				span.hint &nbsp;&nbsp;Last Name
+			
+			br
+			legend 
+				input(type="text" name="driverdetailsemail" placeholder="Email" readonly="readonly")
+				span.hint &nbsp;&nbsp;Email
+				
+			br
+			legend 
+				input(type="text" name="driverdetailsmobile" placeholder="Mobile" readonly="readonly")
+				span.hint &nbsp;&nbsp;Mobile
+				
+			
+			br
+			legend 
+				input(type="text" name="driverdetailspassword" placeholder="Password" readonly="readonly")
+				span.hint &nbsp;&nbsp;Password
+			
+			br
+			legend 
+				input(type="text" name="driverdetailsstreet" placeholder="Street Address" readonly="readonly")
+				span.hint &nbsp;&nbsp;Street
+			
+			br
+			legend 
+				input(type="text" name="driverdetailscity" placeholder="City" readonly="readonly")
+				span.hint &nbsp;&nbsp;City
+				
+			br
+			legend 
+				input(type="text" name="driverdetailsstate" placeholder="State" readonly="readonly")
+				span.hint &nbsp;&nbsp;State
+			
+			br
+			legend 
+				input(type="text" name="driverdetailszip" placeholder="Zip" readonly="readonly")
+				span.hint &nbsp;&nbsp;Zip
+			br
+			legend 
+				input(type="text" name="driverdetailsstatus" placeholder="Status" readonly="readonly")
+				span.hint &nbsp;&nbsp;Status
+			
+			
+			br
+			button(type="button" name="arbutton" value="approve")#approvedriver
+				span.fa.fa-check &nbsp;&nbsp;&nbsp;&nbsp;
+				span Approve Driver 
+				
+			button(type="button" name="arbutton" value="reject")#rejectdriver
+				span.fa.fa-check &nbsp;&nbsp;
+				span Reject Driver 	
+				
+					
+				

@@ -1,0 +1,67 @@
+#driverdetailsPanel(hidden).panel
+	h1 Please check your approval status and other details
+	hr
+	
+	#innerWrap
+		
+		
+		form(action="/driverdetails" method="POST")#driverdetailsform
+			legend 
+				input(type="text" name="driverdetailsfirstname" placeholder="First Name")
+				span.hint &nbsp;&nbsp;First Name
+			
+			br
+			legend 
+				input(type="text" name="driverdetailslastname" placeholder="Last Name")
+				span.hint &nbsp;&nbsp;Last Name
+			
+			br
+			legend 
+				input(type="text" name="driverdetailsemail" placeholder="Email")
+				span.hint &nbsp;&nbsp;Email
+			
+			br
+			legend 
+				input(type="text" name="driverdetailsmobile" placeholder="Mobile")
+				span.hint &nbsp;&nbsp;Mobile
+			
+			br
+			legend 
+				input(type="text" name="driverdetailspassword" placeholder="Password")
+				span.hint &nbsp;&nbsp;Password
+			
+			br
+			legend 
+				input(type="text" name="driverdetailsstreet" placeholder="Street Address")
+				span.hint &nbsp;&nbsp;Street
+			
+			br
+			legend 
+				input(type="text" name="driverdetailscity" placeholder="City")
+				span.hint &nbsp;&nbsp;City
+				
+				br
+			legend 
+				input(type="text" name="driverdetailsstate" placeholder="State")
+				span.hint &nbsp;&nbsp;State
+			
+			br
+			legend 
+				input(type="text" name="driverdetailszip" placeholder="Zip")
+				span.hint &nbsp;&nbsp;Zip
+			
+			br
+			legend 
+				input(type="text" name="driverdetailsstatus" placeholder="Status" readonly="readonly")
+				span.hint &nbsp;&nbsp;Status
+			
+			
+			br
+			
+			button(type="button")#updatedriver
+				span.fa.fa-check &nbsp;&nbsp;
+				span Update Driver Details
+			
+		
+	ul#drvdwrap		
+			

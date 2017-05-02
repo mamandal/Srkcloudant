@@ -1,0 +1,63 @@
+extends ./template/layout.jade
+	
+	
+// --------------- Header -------------- //
+block custom_header
+	script(src='/js/part1.js?v=#{bag.jshash}')
+	script(type='text/javascript').
+		$(document).ready(function(){
+			
+		});
+		
+		
+// --------------- Navigation Bar  -------------- //
+block navpanel
+	include ./template/nav_part1.jade
+	
+	
+// --------------- Main Stuff  -------------- //
+block content
+	#contentPanel
+		
+		#blockdate(title="date of last block") loading...
+		input(type="hidden" name="userrole" placeholder="User Role" readonly="readonly")
+		
+		// --------------- Login Panel
+		include ./panel_login_user.jade
+		
+		// --------------- Create Panel
+		include ./panel_driver_signup.jade
+		
+		// --------------- Create Panel
+		include ./check_driver.jade
+		
+		// --------------- Create Panel
+		include ./panel_driver_details.jade
+		
+		// --------------- Create Panel
+		include ./panel_pending_driver_list.jade
+		
+		// --------------- Create Panel
+		include ./panel_approval_driver_list.jade
+		
+		// --------------- Create Panel
+		include ./panel_reject_driver_list.jade
+		
+		
+		// --------------- Create Panel
+		include ./panel_driver_approve_reject.jade
+		
+		// --------------- Create Panel
+		include ./panel_approve_reject_success.jade
+		
+		include ./panel_noaccess.jade
+		
+		include ./panel_driver_approve_show.jade
+		
+		include ./panel_driver_reject_show.jade
+		
+		
+		
+		
+//block footer
+//	include ./template/blockchain.jade

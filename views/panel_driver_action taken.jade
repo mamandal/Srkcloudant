@@ -1,0 +1,23 @@
+#driverActionTakenPanel(hidden).panel
+	h1 List of awaiting driver approval 
+	hr
+	
+	#innerWrap
+		
+		
+		form(action="/actiontakendriverdetails" method="POST")#actiontakendriverlistdetailsform
+		
+	li.dropdown.btn.btn-default
+  		span.glyphicon.glyphicon-th-list
+    |  Select 
+    span.caret
+ 	 ul.dropdown-menu.dropdown-toggle(data-toggle="dropdown")
+    li
+      a(href="#") Approved
+    li 
+      a(href="#") Reject
+    li
+     li 
+      a(href="#") Pending
+	
+	ul#drlistwrap

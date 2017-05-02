@@ -1,0 +1,18 @@
+#checkdriverPanel(hidden).panel
+	h1 Check a driver's details
+	hr
+	
+	#innerWrap
+	
+			form(action="/checkdriver" method="POST")#checkdriverform
+			
+			legend 
+				input(type="text" name="checkdriveremail" placeholder="Please enter Email Address")
+				span.hint &nbsp;&nbsp;Email
+			
+			br
+			
+			
+			button(type="button")#checkdriverdetails
+				span.fa.fa-check &nbsp;&nbsp;
+				span Check Driver Details

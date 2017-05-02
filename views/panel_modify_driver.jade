@@ -1,0 +1,56 @@
+#modifydriverPanel(hidden).panel
+	h1 Please check the requested driver details
+	hr
+	
+	#innerWrap
+		
+		
+		form(action="/modifydriver" method="POST")#modifydriverform
+			legend 
+				input(type="text" name="modifydriverfirstname" placeholder="First Name")
+				span.hint &nbsp;&nbsp;First Name
+			
+			br
+			legend 
+				input(type="text" name="modifydriverlastname" placeholder="Last Name")
+				span.hint &nbsp;&nbsp;Last Name
+			
+			br
+			legend 
+				input(type="text" name="modifydriveremail" placeholder="Email")
+				span.hint &nbsp;&nbsp;Email
+			
+			br
+			legend 
+				input(type="text" name="modifydriverpassword" placeholder="Password")
+				span.hint &nbsp;&nbsp;Password
+			
+			br
+			legend 
+				input(type="text" name="modifydriverstreet" placeholder="Street Address")
+				span.hint &nbsp;&nbsp;Street
+			
+			br
+			legend 
+				input(type="text" name="modifydrivercity" placeholder="City")
+				span.hint &nbsp;&nbsp;City
+				
+				br
+			legend 
+				input(type="text" name="modifydriverstate" placeholder="State")
+				span.hint &nbsp;&nbsp;State
+			
+			br
+			legend 
+				input(type="text" name="modifydriverzip" placeholder="Zip")
+				span.hint &nbsp;&nbsp;Zip
+			
+			
+			br
+			
+			button(type="button")#modifydriver
+				span.fa.fa-check &nbsp;&nbsp;
+				span Update Driver Details
+			
+			
+			

@@ -1,0 +1,60 @@
+#signupPanel(hidden).panel
+	h1 Sign up to become Uber driver partner
+	hr
+	
+	#innerWrap
+		
+		
+		form(action="/signup" method="POST")#signupform
+			legend 
+				input(type="text" name="firstname" placeholder="First Name")
+				span.hint &nbsp;&nbsp;First Name
+			
+			br
+			legend 
+				input(type="text" name="lastname" placeholder="Last Name")
+				span.hint &nbsp;&nbsp;Last Name
+			
+			br
+			legend 
+				input(type="text" name="email" placeholder="Email Address")
+				span.hint &nbsp;&nbsp;Email
+			
+			br
+			legend 
+				input(type="text" name="mobile" placeholder="Mobile Number")
+				span.hint &nbsp;&nbsp;Mobile
+			
+			br			
+			legend 
+				input(type="text" name="password" placeholder="Password")
+				span.hint &nbsp;&nbsp;Password
+			
+			br
+			legend 
+				input(type="text" name="street" placeholder="Street Address")
+				span.hint &nbsp;&nbsp;Street
+			
+			br
+			legend 
+				input(type="text" name="city" placeholder="City")
+				span.hint &nbsp;&nbsp;City
+				
+				br
+			legend 
+				input(type="text" name="state" placeholder="State")
+				span.hint &nbsp;&nbsp;State
+			
+			br
+			legend 
+				input(type="text" name="zip" placeholder="Zip")
+				span.hint &nbsp;&nbsp;Zip
+			
+			br
+			
+			button(type="button")#signup
+				span.fa.fa-check &nbsp;&nbsp;
+				span Sign Up
+					
+			
+			

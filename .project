@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>nodejscloudantbp</name>
+	<name>uberdotcom</name>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
-		<buildCommand>
-			<name>com.eclipsesource.jshint.ui.builder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.nodeclipse.ui.NodeNature</nature>
-		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
+		<nature>org.eclipse.sirius.nature.modelingproject</nature>
 	</natures>
 </projectDescription>

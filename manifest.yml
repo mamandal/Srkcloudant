@@ -3,8 +3,7 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: Srkcloudant
-  host: Srkcloudant
+  name: hertzdotcom
+  host: hertzdotcom
   disk_quota: 1024M
-  services:
-  - Srkcloudant-cloudantNoSQLDB
+  
